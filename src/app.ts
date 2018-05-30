@@ -19,3 +19,7 @@ export class App extends AtomApp {
 
 const app = new App();
 app.main();
+
+declare var bridge: any;
+
+bridge.appLoaded(app);

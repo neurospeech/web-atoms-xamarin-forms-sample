@@ -1,6 +1,6 @@
 import { AtomPage } from "./atom-page";
 
-declare var global: any;
+declare var App: any;
 
 export class AtomApp {
 
@@ -11,7 +11,7 @@ export class AtomApp {
 
     public set page(v: AtomPage) {
         this.mPage = v;
-        global.App.CurrentPage = v.element;
+        App.CurrentPage = v.element;
     }
 
 }

@@ -1,0 +1,25 @@
+{
+  "name": "web-atoms-xamarin-forms-sample",
+  "version": "1.0.0",
+  "description": "TypeScript WebAtoms Xamarin Forms Sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neurospeech/web-atoms-xamarin-forms-sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neurospeech/web-atoms-xamarin-forms-sample/issues"
+  },
+  "dependencies": {
+    "web-atoms-core": "^1.0.5"
+  },
+  "homepage": "https://github.com/neurospeech/web-atoms-xamarin-forms-sample#readme",
+  "devDependencies": {
+    "typescript": "^2.8.3"
+  }
+}

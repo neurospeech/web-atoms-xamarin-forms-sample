@@ -11,7 +11,7 @@ export class AtomApp {
 
     public set page(v: AtomPage) {
         this.mPage = v;
-        global.App.Current = v.element;
+        global.App.CurrentPage = v.element;
     }
 
 }

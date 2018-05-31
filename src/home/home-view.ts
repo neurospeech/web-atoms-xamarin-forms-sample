@@ -7,20 +7,12 @@ export class HomeView extends AtomPage {
     @bindableProperty
     public message: string = "Hello World";
 
-    /**
-     *
-     * @param e
-     */
-    constructor(e: IAtomElement) {
-        super(e);
-    }
-
-    public init(): void {
-        super.init();
+    public create(): void {
+        super.create();
 
         const bridge = AtomBridge.instance;
 
-        this.bind(this.element, "Title", ["owner.title"]);
+        this.bind(this.element, "Title", ["title"]);
 
         const grid = bridge.create("Xamarin.Forms.Grid");
         const label = bridge.create("Xamarin.Forms.Label");

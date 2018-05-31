@@ -6,8 +6,7 @@ export class AtomPage extends AtomControl {
     @bindableProperty
     public title: string = "Page";
 
-    constructor(e: IAtomElement) {
-        super(e || AtomBridge.create("Xamarin.Forms.ContentPage"));
+    protected create(): void {
+        this.element = AtomBridge.create("Xamarin.Forms.ContentPage");
     }
-
 }

@@ -16,7 +16,7 @@
     "url": "https://github.com/neurospeech/web-atoms-xamarin-forms-sample/issues"
   },
   "dependencies": {
-    "web-atoms-core": "^1.0.10"
+    "web-atoms-core": "^1.0.38"
   },
   "homepage": "https://github.com/neurospeech/web-atoms-xamarin-forms-sample#readme",
   "devDependencies": {

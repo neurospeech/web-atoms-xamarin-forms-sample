@@ -1,6 +1,6 @@
 {
   "name": "web-atoms-xamarin-forms-sample",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "TypeScript WebAtoms Xamarin Forms Sample",
   "main": "index.js",
   "scripts": {

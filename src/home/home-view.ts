@@ -29,7 +29,7 @@ export class HomeView extends AtomPage {
 
         this.append(grid);
 
-        this.bind(label, "Text", ["owner.message"]);
+        this.bind(label, "Text", ["message"]);
     }
 
 }

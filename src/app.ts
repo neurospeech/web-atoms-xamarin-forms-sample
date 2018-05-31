@@ -9,10 +9,12 @@ export class App extends AtomApp {
 
         this.page = homeView;
 
+        homeView.init();
+
         let i = 1;
         setInterval(() => {
             homeView.message = `Hello world ${i++}`;
-        }, 3000);
+        }, 1000);
     }
 
 }

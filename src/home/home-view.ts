@@ -24,7 +24,6 @@ export class HomeView extends AtomPage {
         // this.bind(label, "Text", ["message"]);
 
         bridge.loadContent(this.element, `<ContentPage
-            atom:AtomBridge.Init="initPage1"
             xmlns:atom="clr-namespace:WebAtoms;assembly=WebAtoms"
             xmlns="http://xamarin.com/schemas/2014/forms">
         <Grid>
@@ -40,12 +39,16 @@ export class HomeView extends AtomPage {
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Label
-                atom:AtomBridge.Init="initPage2"
+                x:Name="label1"
                 Grid.Row="1"
                 Grid.Column="1"
             />
         </Grid>
     </ContentPage>`);
+
+        this.bind(this.element, "Title", ["title"]);
+        const e = bridge.findChild(this.element, "label1");
+        this.bind(e, "Text", ["message"]);
     }
 
     public initPage1(e: IAtomElement): void {

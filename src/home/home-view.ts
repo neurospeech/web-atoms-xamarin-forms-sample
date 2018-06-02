@@ -24,7 +24,7 @@ export class HomeView extends AtomPage {
         // this.bind(label, "Text", ["message"]);
 
         bridge.loadContent(this.element, `<ContentPage
-            xmlns:atom="clr-namespace:WebAtoms;assembly=WebAtoms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns="http://xamarin.com/schemas/2014/forms">
         <Grid>
             <Grid.RowDefinitions>

@@ -39,6 +39,9 @@ export class HomeView extends AtomPage {
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Label
+                Text="Sample"
+                />
+            <Label
                 x:Name="label1"
                 Grid.Row="1"
                 Grid.Column="1"
@@ -46,16 +49,11 @@ export class HomeView extends AtomPage {
         </Grid>
     </ContentPage>`);
 
-        this.bind(this.element, "Title", ["title"]);
+        bridge.attachControl(this.element, this);
+
+        // bridge.setValue(this.element, "Title", "Sample");
+
         const e = bridge.findChild(this.element, "label1");
-        this.bind(e, "Text", ["message"]);
-    }
-
-    public initPage1(e: IAtomElement): void {
-        this.bind(e, "Title", ["title"]);
-    }
-
-    public initPage2(e: IAtomElement): void {
         this.bind(e, "Text", ["message"]);
     }
 

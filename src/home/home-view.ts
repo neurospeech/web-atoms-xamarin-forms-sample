@@ -53,6 +53,7 @@ export class HomeView extends AtomPage {
 
         // bridge.setValue(this.element, "Title", "Sample");
 
+        // this.bind(this.element, "Text", ["message"]);  
         const e = bridge.findChild(this.element, "label1");
         this.bind(e, "Text", ["message"]);
     }

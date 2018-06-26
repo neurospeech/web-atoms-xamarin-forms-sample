@@ -1,6 +1,5 @@
-import { AtomControl } from "web-atoms-core/bin/controls/atom-control";
+import { AtomPage } from "web-atoms-core/bin/controls/xf/AtomPage";
 import { AtomBridge, bindableProperty, IAtomElement } from "web-atoms-core/bin/core";
-import { AtomPage } from "../core/atom-page";
 
 export class HomeView extends AtomPage {
 
@@ -49,13 +48,8 @@ export class HomeView extends AtomPage {
         </Grid>
     </ContentPage>`);
 
-        bridge.attachControl(this.element, this);
-
-        // bridge.setValue(this.element, "Title", "Sample");
-
-        // this.bind(this.element, "Text", ["message"]);  
         const e = bridge.findChild(this.element, "label1");
-        this.bind(e, "Text", ["message"]);
+        this.bind(e, "Text", [["message"]]);
     }
 
 }

@@ -1,11 +1,10 @@
-import { AtomBridge } from "web-atoms-core/bin/core";
-import { AtomApp } from "./core/app";
-import { HomeView } from "./home/home-view";
+import { XFApp } from "web-atoms-core/bin/XFApp";
+import { HomeView } from "./home/HomeView";
 
-export class App extends AtomApp {
+export class App extends XFApp {
 
     public main(): void {
-        const homeView = new HomeView();
+        const homeView = new HomeView(this);
 
         this.page = homeView;
 
